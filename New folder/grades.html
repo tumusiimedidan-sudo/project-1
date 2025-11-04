@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="school.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="grades.html">Grades</a>
+  </nav>
+
+  <h1>Grade Calculator</h1>
+  
+  <form method="POST" action="grades.php">
+  <form id="gradeForm" onsubmit="return calculateGrade()">
+    <input type="number" id="math" placeholder="Math Marks"><br>
+    <input type="number" id="science" placeholder="Science Marks"><br>
+    <input type="number" id="english" placeholder="English Marks"><br>
+    <input type="number" id="history" placeholder="History Marks"><br>
+<input type="number" id="geography" placeholder="Geography Marks"><br>
+
+
+    <button type="submit">Calculate</button>
+    <button type="button" onclick="resetForm('gradeForm')">Reset</button>
+  </form>
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
